@@ -1,0 +1,8 @@
+/home/federico/Desktop/RP1/robotprogramming_2024_25/exercises/rp_01_compilers_and_build_systems/build/CMakeFiles/edit_cache.dir
+/home/federico/Desktop/RP1/robotprogramming_2024_25/exercises/rp_01_compilers_and_build_systems/build/CMakeFiles/rebuild_cache.dir
+/home/federico/Desktop/RP1/robotprogramming_2024_25/exercises/rp_01_compilers_and_build_systems/build/src/CMakeFiles/core_library.dir
+/home/federico/Desktop/RP1/robotprogramming_2024_25/exercises/rp_01_compilers_and_build_systems/build/src/CMakeFiles/edit_cache.dir
+/home/federico/Desktop/RP1/robotprogramming_2024_25/exercises/rp_01_compilers_and_build_systems/build/src/CMakeFiles/rebuild_cache.dir
+/home/federico/Desktop/RP1/robotprogramming_2024_25/exercises/rp_01_compilers_and_build_systems/build/executables/CMakeFiles/main.dir
+/home/federico/Desktop/RP1/robotprogramming_2024_25/exercises/rp_01_compilers_and_build_systems/build/executables/CMakeFiles/edit_cache.dir
+/home/federico/Desktop/RP1/robotprogramming_2024_25/exercises/rp_01_compilers_and_build_systems/build/executables/CMakeFiles/rebuild_cache.dir
