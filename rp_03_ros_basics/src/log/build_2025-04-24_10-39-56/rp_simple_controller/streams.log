@@ -1,0 +1,39 @@
+[0.011s] Invoking command in '/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller -DCMAKE_INSTALL_PREFIX=/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller
+[0.167s] -- The C compiler identification is GNU 13.3.0
+[0.281s] -- The CXX compiler identification is GNU 13.3.0
+[0.311s] -- Detecting C compiler ABI info
+[0.449s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.461s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.477s] -- Detecting CXX compiler ABI info
+[0.610s] -- Detecting CXX compiler ABI info - done
+[0.623s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.623s] -- Detecting CXX compile features
+[0.624s] -- Detecting CXX compile features - done
+[0.630s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.818s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.950s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.007s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.018s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.049s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.075s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.156s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.158s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.248s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.279s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.314s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.464s] -- Configuring done (1.4s)
+[1.467s] -- Generating done (0.0s)
+[1.469s] -- Build files have been written to: /home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller
+[1.477s] Invoked command in '/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller -DCMAKE_INSTALL_PREFIX=/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller
+[1.479s] Invoking command in '/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller -- -j12 -l12
+[1.551s] [ 50%] [32mBuilding CXX object CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o[0m
+[1.593s] [01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/twist.hpp: No such file or directory
+[1.593s]     4 | #include [01;31m[K"geometry_msgs/msg/twist.hpp"[m[K
+[1.593s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.593s] compilation terminated.
+[1.594s] gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1
+[1.595s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2
+[1.595s] gmake: *** [Makefile:146: all] Error 2
+[1.598s] Invoked command in '/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller -- -j12 -l12

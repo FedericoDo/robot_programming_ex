@@ -1,0 +1,22 @@
+[0.006s] Invoking command in '/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller -- -j12 -l12
+[0.055s] [100%] Built target turtle_square
+[0.063s] Invoked command in '/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller -- -j12 -l12
+[0.071s] Invoking command in '/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller
+[0.076s] -- Install configuration: ""
+[0.076s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/lib/rp_simple_controller/turtle_square
+[0.076s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/package_run_dependencies/rp_simple_controller
+[0.076s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/parent_prefix_path/rp_simple_controller
+[0.076s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.sh
+[0.076s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.dsv
+[0.076s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/path.sh
+[0.076s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/path.dsv
+[0.077s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.bash
+[0.077s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.sh
+[0.077s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.zsh
+[0.077s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.dsv
+[0.078s] -- Installing: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/package.dsv
+[0.078s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/packages/rp_simple_controller
+[0.079s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig.cmake
+[0.079s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig-version.cmake
+[0.079s] -- Up-to-date: /home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/package.xml
+[0.079s] Invoked command in '/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller

@@ -1,0 +1,8 @@
+[01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In member function ‘[01m[Kvoid TurtleSquareNode::[01;32m[Kpose_callback[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:75:60:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Werror=unused-parameter]8;;[m[K]
+   75 |   void pose_callback([01;31m[Kconst turtlesim::msg::Pose::SharedPtr msg[m[K) {
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

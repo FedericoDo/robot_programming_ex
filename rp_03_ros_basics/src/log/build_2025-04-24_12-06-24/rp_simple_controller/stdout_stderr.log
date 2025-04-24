@@ -1,0 +1,14 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o[0m
+[01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In member function ‘[01m[Kvoid TurtleSquareNode::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:80:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   80 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:85:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kvelocity_message[m[K’
+   85 |     [01;31m[Kvelocity_message[m[K.linear.x = v;
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity_message[m[K’ was not declared in this scope
+   86 |     [01;31m[Kvelocity_message[m[K.angular.z = w;
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

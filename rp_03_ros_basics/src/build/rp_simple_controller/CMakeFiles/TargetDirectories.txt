@@ -1,0 +1,10 @@
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/uninstall.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/rp_simple_controller_uninstall.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/turtle_square.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/test.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/edit_cache.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/rebuild_cache.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/list_install_components.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/install.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/install/local.dir
+/home/federico/Desktop/git/rp_03_ros_basics/src/build/rp_simple_controller/CMakeFiles/install/strip.dir

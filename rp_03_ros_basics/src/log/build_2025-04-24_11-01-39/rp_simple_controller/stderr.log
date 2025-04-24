@@ -1,0 +1,7 @@
+[01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In member function ‘[01m[Kvoid TurtleSquareNode::[01;32m[Kpose_callback[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/federico/Desktop/git/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:77:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<turtlesim::msg::Pose_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kx[m[K’
+   77 |     std::cout << "I heard: "<< msg.[01;31m[Kx[m[K << std::endl;
+      |                                    [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

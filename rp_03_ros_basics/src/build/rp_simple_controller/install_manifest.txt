@@ -1,0 +1,16 @@
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/lib/rp_simple_controller/turtle_square
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/package_run_dependencies/rp_simple_controller
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/parent_prefix_path/rp_simple_controller
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.sh
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.dsv
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/path.sh
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/path.dsv
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.bash
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.sh
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.zsh
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.dsv
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/package.dsv
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/packages/rp_simple_controller
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig.cmake
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig-version.cmake
+/home/federico/Desktop/git/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/package.xml
