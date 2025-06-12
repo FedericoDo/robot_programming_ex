@@ -1,0 +1,40 @@
+[0.006s] Invoking command in '/home/federico/Desktop/git/ros/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/federico/Desktop/git/ros/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/federico/Desktop/git/ros/install/cpp_pubsub
+[0.015s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.170s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.185s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.190s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.197s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.204s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.240s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.241s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.288s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.327s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.388s] -- Configuring done (0.4s)
+[0.394s] -- Generating done (0.0s)
+[0.396s] -- Build files have been written to: /home/federico/Desktop/git/ros/build/cpp_pubsub
+[0.400s] Invoked command in '/home/federico/Desktop/git/ros/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/federico/Desktop/git/ros/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/federico/Desktop/git/ros/install/cpp_pubsub
+[0.401s] Invoking command in '/home/federico/Desktop/git/ros/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/ros/build/cpp_pubsub -- -j12 -l12
+[0.442s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[2.892s] [100%] [32m[1mLinking CXX executable talker[0m
+[3.010s] [100%] Built target talker
+[3.018s] Invoked command in '/home/federico/Desktop/git/ros/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/ros/build/cpp_pubsub -- -j12 -l12
+[3.026s] Invoking command in '/home/federico/Desktop/git/ros/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/federico/Desktop/git/ros/build/cpp_pubsub
+[3.031s] -- Install configuration: ""
+[3.031s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/lib/cpp_pubsub/talker
+[3.031s] -- Set non-toolchain portion of runtime path of "/home/federico/Desktop/git/ros/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[3.032s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[3.033s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[3.033s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[3.033s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[3.033s] -- Installing: /home/federico/Desktop/git/ros/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[3.033s] Invoked command in '/home/federico/Desktop/git/ros/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/federico/Desktop/git/ros/build/cpp_pubsub

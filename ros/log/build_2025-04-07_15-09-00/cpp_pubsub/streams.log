@@ -1,0 +1,32 @@
+[0.007s] Invoking command in '/home/federico/Desktop/git/ros/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/federico/Desktop/git/ros/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/federico/Desktop/git/ros/install/cpp_pubsub
+[0.101s] -- The C compiler identification is GNU 13.3.0
+[0.178s] -- The CXX compiler identification is GNU 13.3.0
+[0.198s] -- Detecting C compiler ABI info
+[0.293s] -- Detecting C compiler ABI info - done
+[0.298s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.298s] -- Detecting C compile features
+[0.298s] -- Detecting C compile features - done
+[0.306s] -- Detecting CXX compiler ABI info
+[0.394s] -- Detecting CXX compiler ABI info - done
+[0.404s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.404s] -- Detecting CXX compile features
+[0.404s] -- Detecting CXX compile features - done
+[0.408s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.502s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.583s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.611s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.619s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.630s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.641s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.692s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.694s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.766s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.780s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.798s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.854s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.863s] -- Configuring incomplete, errors occurred!
+[0.863s] [31mCMake Error at CMakeLists.txt:24 (isntall):
+[0.863s]   Unknown CMake command "isntall".
+[0.863s] 
+[0.863s] [0m
+[0.869s] Invoked command in '/home/federico/Desktop/git/ros/build/cpp_pubsub' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/federico/Desktop/git/ros/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/federico/Desktop/git/ros/install/cpp_pubsub

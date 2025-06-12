@@ -1,0 +1,7 @@
+[0.005s] Invoking command in '/home/federico/Desktop/git/ros/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/federico/Desktop/git/ros/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/federico/Desktop/git/ros/install/cpp_pubsub
+[0.012s] [31mCMake Error at CMakeLists.txt:14 (if):
+[0.012s]   Flow control statements are not properly nested.
+[0.012s] 
+[0.012s] [0m
+[0.012s] -- Configuring incomplete, errors occurred!
+[0.013s] Invoked command in '/home/federico/Desktop/git/ros/build/cpp_pubsub' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/federico/Desktop/git/ros/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/federico/Desktop/git/ros/install/cpp_pubsub
