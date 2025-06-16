@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.061s] [ 33%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o[0m
+[1.332s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishLine[m[K()[m[K’:
+[1.332s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:86:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing visualization_msgs::msg::Marker = struct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpoose[m[K’; did you mean ‘[01m[Kpose[m[K’?
+[1.332s]    86 |         line.[01;31m[Kpoose[m[K.orientation.w = 1.0;
+[1.332s]       |              [01;31m[K^~~~~[m[K
+[1.332s]       |              [32m[Kpose[m[K
+[2.050s] gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o] Error 1
+[2.050s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+[2.050s] gmake: *** [Makefile:146: all] Error 2
+[2.053s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12

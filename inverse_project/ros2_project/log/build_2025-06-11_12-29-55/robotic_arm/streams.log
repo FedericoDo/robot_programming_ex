@@ -1,0 +1,10 @@
+[0.009s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.061s] [ 33%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o[0m
+[1.336s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishPoint[m[K()[m[K’:
+[1.336s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:53:55:[m[K [01;31m[Kerror: [m[K‘[01m[KLINE[m[K’ is not a member of ‘[01m[Kvisualization_msgs::msg::Marker[m[K’ {aka ‘[01m[Kvisualization_msgs::msg::Marker_<std::allocator<void> >[m[K’}
+[1.336s]    53 |         point.type = visualization_msgs::msg::Marker::[01;31m[KLINE[m[K;
+[1.336s]       |                                                       [01;31m[K^~~~[m[K
+[2.034s] gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o] Error 1
+[2.034s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+[2.035s] gmake: *** [Makefile:146: all] Error 2
+[2.037s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12

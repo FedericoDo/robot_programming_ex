@@ -1,0 +1,14 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/dh_params.cpp.o[0m
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:30:50:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst DHParams[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   30 |             message.data += "\n" + [01;31m[Kparam.toString()[m[K;
+      |                                    [01;31m[K~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:3[m[K:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/include/robotic_arm/dh_params.h:12:17:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kstd::string DHParams::[01;32m[KtoString[m[K()[m[K’
+   12 |     std::string [01;36m[KtoString[m[K();
+      |                 [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

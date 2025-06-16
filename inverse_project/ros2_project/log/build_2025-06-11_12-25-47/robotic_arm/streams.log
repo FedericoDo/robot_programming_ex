@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.054s] [ 33%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o[0m
+[1.304s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishPoint[m[K()[m[K’:
+[1.304s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:74:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >, __gnu_cxx::_S_atomic, false, false>::element_type = class rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >[m[K’} has no member named ‘[01m[KpointPublisher[m[K’; did you mean ‘[01m[KPublisher[m[K’?
+[1.304s]    74 |         publisher_->[01;31m[KpointPublisher[m[K(point);
+[1.304s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.305s]       |                     [32m[KPublisher[m[K
+[1.969s] gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o] Error 1
+[1.969s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+[1.969s] gmake: *** [Makefile:146: all] Error 2
+[1.971s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12

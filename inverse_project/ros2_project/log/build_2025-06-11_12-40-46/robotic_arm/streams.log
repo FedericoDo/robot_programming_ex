@@ -1,0 +1,15 @@
+[0.009s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.061s] [ 33%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o[0m
+[1.299s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[1.299s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:26:40:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishPoint[m[K’ is not a member of ‘[01m[KRoboticArmNode[m[K’
+[1.299s]    26 |             std::bind(&RoboticArmNode::[01;31m[KpublishPoint[m[K, this));
+[1.300s]       |                                        [01;31m[K^~~~~~~~~~~~[m[K
+[1.305s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishLine[m[K()[m[K’:
+[1.305s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:106:9:[m[K [01;31m[Kerror: [m[K‘[01m[KpointPublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KlinePublisher_[m[K’?
+[1.305s]   106 |         [01;31m[KpointPublisher_[m[K->publish(line);
+[1.305s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.305s]       |         [32m[KlinePublisher_[m[K
+[1.979s] gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o] Error 1
+[1.980s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+[1.980s] gmake: *** [Makefile:146: all] Error 2
+[1.982s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12

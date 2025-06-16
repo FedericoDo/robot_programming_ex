@@ -1,0 +1,47 @@
+[0.008s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.090s] [ 33%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o[0m
+[1.350s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[1.350s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.350s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.350s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.350s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.350s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+[1.350s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+[1.351s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.351s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.351s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[1.351s]                  from [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:4[m[K:
+[1.351s] /opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<void (RoboticArmNode::RoboticArmNode()::<lambda()>::*)()>[m[K’:
+[1.351s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K   required from ‘[01m[Kstruct rclcpp::function_traits::function_traits<RoboticArmNode::RoboticArmNode()::<lambda()> >[m[K’
+[1.351s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:165:8:[m[K   required from ‘[01m[Kstruct rclcpp::function_traits::same_arguments<RoboticArmNode::RoboticArmNode()::<lambda()>, std::function<void()> >[m[K’
+[1.351s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:220:80:[m[K   required by substitution of ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::[01;32m[Kcreate_wall_timer[m[K(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr, bool) [35m[K[with DurationRepT = long int; DurationT = std::ratio<1>; CallbackT = RoboticArmNode::RoboticArmNode()::<lambda()>][m[K[m[K’
+[1.351s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:24:41:[m[K   required from here
+[1.352s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:[m[K [01;31m[Kerror: [m[K‘[01m[Koperator()[m[K’ is not a member of ‘[01m[Kvoid (RoboticArmNode::RoboticArmNode()::<lambda()>::*)()[m[K’
+[1.352s]    52 |     typename function_traits<decltype( [01;31m[K&FunctionT::operator()[m[K)>::arguments>::type;
+[1.352s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.352s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:[m[K [01;31m[Kerror: [m[K‘[01m[Koperator()[m[K’ is not a member of ‘[01m[Kvoid (RoboticArmNode::RoboticArmNode()::<lambda()>::*)()[m[K’
+[1.352s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:[m[K [01;31m[Kerror: [m[K‘[01m[Koperator()[m[K’ is not a member of ‘[01m[Kvoid (RoboticArmNode::RoboticArmNode()::<lambda()>::*)()[m[K’
+[1.352s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[1.352s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:24:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRoboticArmNode::create_wall_timer(std::chrono::seconds, RoboticArmNode::RoboticArmNode()::<lambda()>)[m[K’
+[1.352s]    24 |         timer_ = [01;31m[Kthis->create_wall_timer([m[K
+[1.352s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.352s]    25 | [01;31m[K            std::chrono::seconds(1),[m[K
+[1.352s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K     
+[1.352s]    26 | [01;31m[K            [this, message]() mutable {[m[K
+[1.352s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[1.353s]    27 | [01;31m[K                message.data = "test";[m[K
+[1.353s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K   
+[1.353s]    28 | [01;31m[K                publisher_->publish(message);[m[K
+[1.353s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.353s]    29 | [01;31m[K            })[m[K;
+[1.353s]       |             [01;31m[K~~[m[K                           
+[1.353s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.353s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K:
+[1.353s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:241:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::[01;32m[Kcreate_wall_timer[m[K(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr, bool)[m[K’
+[1.353s]   241 |   [01;36m[Kcreate_wall_timer[m[K(
+[1.353s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[1.353s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:241:3:[m[K [01;36m[Knote: [m[K  substitution of deduced template arguments resulted in errors seen above
+[1.920s] gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o] Error 1
+[1.921s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+[1.921s] gmake: *** [Makefile:146: all] Error 2
+[1.923s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12

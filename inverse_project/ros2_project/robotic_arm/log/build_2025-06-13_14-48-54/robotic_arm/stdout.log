@@ -1,0 +1,23 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable publisher[0m
+[100%] Built target publisher
+-- Install configuration: ""
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/config
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/config/dh_params.yaml
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/lib/robotic_arm/publisher
+-- Set non-toolchain portion of runtime path of "/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/lib/robotic_arm/publisher" to ""
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/ament_index/resource_index/package_run_dependencies/robotic_arm
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/ament_index/resource_index/parent_prefix_path/robotic_arm
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.sh
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.dsv
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/environment/path.sh
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/environment/path.dsv
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/local_setup.bash
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/local_setup.sh
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/local_setup.zsh
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/local_setup.dsv
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/package.dsv
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/ament_index/resource_index/packages/robotic_arm
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig.cmake
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig-version.cmake
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/package.xml

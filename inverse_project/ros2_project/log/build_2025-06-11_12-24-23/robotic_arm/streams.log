@@ -1,0 +1,38 @@
+[0.007s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.061s] [ 33%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o[0m
+[1.312s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[1.312s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:22:70:[m[K [01;31m[Kerror: [m[K‘[01m[KMarker[m[K’ is not a member of ‘[01m[Kvisualization_msgs[m[K’; did you mean ‘[01m[Kvisualization_msgs::msg::Marker[m[K’?
+[1.312s]    22 | ointPublisher_ = this->create_publisher<visualization_msgs::[01;31m[KMarker[m[K>("point", 10);
+[1.312s]       |                                                             [01;31m[K^~~~~~[m[K
+[1.312s] 
+[1.313s] In file included from [01m[K/opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/marker.hpp:7[m[K,
+[1.313s]                  from [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:7[m[K:
+[1.313s] [01m[K/opt/ros/jazzy/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:440:7:[m[K [01;36m[Knote: [m[K‘[01m[Kvisualization_msgs::msg::Marker[m[K’ declared here
+[1.313s]   440 | using [01;36m[KMarker[m[K =
+[1.313s]       |       [01;36m[K^~~~~~[m[K
+[1.313s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:22:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRoboticArmNode::create_publisher<<expression error> >(const char [6], int)[m[K’
+[1.313s]    22 | lisher_ = [01;31m[Kthis->create_publisher<visualization_msgs::Marker>("point", 10)[m[K;
+[1.313s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[1.313s] 
+[1.313s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1663[m[K,
+[1.313s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.313s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.313s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[1.313s]                  from [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:4[m[K:
+[1.314s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.314s]    73 | [01;36m[KNode[m[K::create_publisher(
+[1.314s]       | [01;36m[K^~~~[m[K
+[1.314s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.314s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:22:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.314s]    22 | lisher_ = [01;31m[Kthis->create_publisher<visualization_msgs::Marker>("point", 10)[m[K;
+[1.314s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[1.314s] 
+[1.318s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishPoint[m[K()[m[K’:
+[1.318s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:74:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >, __gnu_cxx::_S_atomic, false, false>::element_type = class rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >[m[K’} has no member named ‘[01m[KpointPublisher[m[K’; did you mean ‘[01m[KPublisher[m[K’?
+[1.318s]    74 |         publisher_->[01;31m[KpointPublisher[m[K(point);
+[1.318s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.318s]       |                     [32m[KPublisher[m[K
+[1.886s] gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o] Error 1
+[1.886s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+[1.886s] gmake: *** [Makefile:146: all] Error 2
+[1.888s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12

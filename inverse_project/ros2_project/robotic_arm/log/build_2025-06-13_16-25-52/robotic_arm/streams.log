@@ -1,0 +1,24 @@
+[0.014s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm -- -j12 -l12
+[0.127s] [100%] Built target publisher
+[0.143s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm -- -j12 -l12
+[0.157s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm
+[0.170s] -- Install configuration: ""
+[0.170s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/config
+[0.170s] -- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/config/dh_params.yaml
+[0.171s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/lib/robotic_arm/publisher
+[0.171s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/ament_index/resource_index/package_run_dependencies/robotic_arm
+[0.171s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/ament_index/resource_index/parent_prefix_path/robotic_arm
+[0.171s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.sh
+[0.171s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.dsv
+[0.171s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/environment/path.sh
+[0.172s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/environment/path.dsv
+[0.172s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/local_setup.bash
+[0.172s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/local_setup.sh
+[0.172s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/local_setup.zsh
+[0.172s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/local_setup.dsv
+[0.172s] -- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/package.dsv
+[0.172s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/ament_index/resource_index/packages/robotic_arm
+[0.173s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig.cmake
+[0.173s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig-version.cmake
+[0.173s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/install/robotic_arm/share/robotic_arm/package.xml
+[0.175s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm

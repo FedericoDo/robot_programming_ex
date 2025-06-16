@@ -1,0 +1,44 @@
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:34:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   34 |         for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+      |                          [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:36:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<Eigen::Matrix<double, 4, 4> >[m[K’ has no member named ‘[01m[Kpush_Back[m[K’; did you mean ‘[01m[Kpush_back[m[K’?
+   36 |             transforms.[01;31m[Kpush_Back[m[K(computeForwardKinematics(dh_params[i]));
+      |                        [01;31m[K^~~~~~~~~[m[K
+      |                        [32m[Kpush_back[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:36:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kdh_params[m[K’ was not declared in this scope; did you mean ‘[01m[Kdh_params_[m[K’?
+   36 |             transforms.push_Back(computeForwardKinematics([01;31m[Kdh_params[m[K[i]));
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+      |                                                           [32m[Kdh_params_[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishPoint[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:65:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint[m[K’ was not declared in this scope; did you mean ‘[01m[Kjoints[m[K’?
+   65 |         [01;31m[Kjoint[m[K.header.frame_id = "map";
+      |         [01;31m[K^~~~~[m[K
+      |         [32m[Kjoints[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:92:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   92 |         for(auto i = 0; [01;35m[Ki<transforms.size()[m[K; i++){
+      |                         [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:106:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  106 |             [01;31m[K}[m[K
+      |             [01;31m[K^[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:107:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing visualization_msgs::msg::Marker = struct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kx[m[K’
+  107 |             joint.[01;31m[Kx[m[K = T1(0, 3);
+      |                   [01;31m[K^[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:108:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing visualization_msgs::msg::Marker = struct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ky[m[K’
+  108 |             joint.[01;31m[Ky[m[K = T1(1, 3);
+      |                   [01;31m[K^[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:109:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing visualization_msgs::msg::Marker = struct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kz[m[K’
+  109 |             joint.[01;31m[Kz[m[K = T1(2, 3);
+      |                   [01;31m[K^[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishLine[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:132:54:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::vector<DHParams>[m[K’ to ‘[01m[Kconst DHParams&[m[K’
+  132 |         Eigen::Matrix4d T = computeForwardKinematics([01;31m[Kdh_params_[m[K);
+      |                                                      [01;31m[K^~~~~~~~~~[m[K
+      |                                                      [01;31m[K|[m[K
+      |                                                      [01;31m[Kstd::vector<DHParams>[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:163:62:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KEigen::Matrix4d RoboticArmNode::[01;32m[KcomputeForwardKinematics[m[K(const DHParams&)[m[K’
+  163 |     Eigen::Matrix4d computeForwardKinematics([01;36m[Kconst DHParams &param[m[K)
+      |                                              [01;36m[K~~~~~~~~~~~~~~~~^~~~~[m[K
+gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,10 @@
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/uninstall.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/robotic_arm_uninstall.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/publisher.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/test.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/edit_cache.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/rebuild_cache.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/list_install_components.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/install.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/install/local.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/build/robotic_arm/CMakeFiles/install/strip.dir
