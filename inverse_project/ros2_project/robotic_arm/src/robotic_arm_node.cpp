@@ -35,8 +35,7 @@ public:
         }
 
         //INITIALIZE SUBSCRIBER
-        subscriber_ = this->create_subscription<geometry_msgs::msg::Point>(
-            "coordinates", 10,
+        subscriber_ = this->create_subscription<geometry_msgs::msg::Point>("coordinates", 10,
             std::bind(&RoboticArmNode::coordinatesCallback, this, std::placeholders::_1));
     }
 
@@ -51,6 +50,7 @@ private:
     rclcpp::TimerBase::SharedPtr lineTimer_;
     Eigen::Matrix4d T;
     std::vector<Eigen::Matrix4d> transforms;
+    double delta = 0.1;
 
     void publishPoints()
     {
@@ -166,6 +166,9 @@ private:
     void coordinatesCallback(const geometry_msgs::msg::Point::SharedPtr msg)
     {
         RCLCPP_INFO(this->get_logger(), "Received coordinates: x=%.2f, y=%.2f, z=%.2f", msg->x, msg->y, msg->z);
+        Eigen::Vector3d desiredPos(msg->x, msg->y, msg->z);
+
+        solveInverseKinematics(desiredPos);
         // Here you can add logic to handle the received coordinates
     }
     Eigen::Matrix4d computeForwardKinematics(const DHParams &param)
@@ -184,6 +187,76 @@ private:
             0, 0, 0, 1;
 
         return T;
+    }
+    Eigen::MatrixXd computeJacobianPseudoInverse(){
+        int n = dh_params_.size();
+        Eigen::MatrixXd J(3,n);
+        
+        Eigen::Matrix4d T_end = Eigen::Matrix4d::Identity();
+        for (const auto &T : transforms) {
+            T_end *= T;
+        }
+        Eigen::Vector3d end_effector_position(T_end(0, 3), T_end(1, 3), T_end(2, 3));
+        
+        for(int i=0; i<n; i++){
+            double original_theta = dh_params_[i].theta;
+            dh_params_[i].theta += delta;
+            transforms[i] = computeForwardKinematics(dh_params_[i]);
+            Eigen::Matrix4d T_modified = Eigen::Matrix4d::Identity();
+            for (const auto &T : transforms) {
+                T_modified *= T;
+            }
+            Eigen::Vector3d modified_position(T_modified(0, 3), T_modified(1, 3), T_modified(2, 3));
+            Eigen::Vector3d variation = (modified_position - end_effector_position) / delta;
+            
+            J(0, i) = variation(0); 
+            J(1, i) = variation(1); 
+            J(2, i) = variation(2);
+
+            dh_params_[i].theta = original_theta;
+            transforms[i] = computeForwardKinematics(dh_params_[i]);
+        }
+        J = J.completeOrthogonalDecomposition().pseudoInverse();
+        
+        return J;
+    }
+
+    void solveInverseKinematics(const Eigen::Vector3d &desired_position){
+        const double tolerance = 1e-3; 
+        const int max_iterations = 1000;
+        int iteration = 0;
+
+        while (iteration < max_iterations)
+        {
+            Eigen::Matrix4d T_end = Eigen::Matrix4d::Identity();
+            for (const auto &T : transforms) {
+                T_end *= T;
+            }
+            Eigen::Vector3d current_position(T_end(0, 3), T_end(1, 3), T_end(2, 3));
+
+            Eigen::Vector3d error = desired_position - current_position;
+
+            if (error.norm() < tolerance) {
+                RCLCPP_INFO(this->get_logger(), "Inverse kinematics converged after %d iterations.", iteration);
+                transforms.clear();
+                for (auto i = 0; i< dh_params_.size(); i++){
+                    transforms.push_back(computeForwardKinematics(dh_params_[i]));
+                }
+                return;
+            }
+
+            Eigen::MatrixXd J_pseudo = computeJacobianPseudoInverse();
+
+            Eigen::VectorXd delta_theta = J_pseudo * error;
+
+            for (int i = 0; i < dh_params_.size(); i++) {
+                dh_params_[i].theta += delta_theta(i);
+                transforms[i] = computeForwardKinematics(dh_params_[i]);
+            }
+
+            iteration++;
+        }
+    RCLCPP_WARN(this->get_logger(), "Inverse kinematics did not converge within the maximum number of iterations. %d", iteration);
     }
 };
 int main(int argc, char **argv)
