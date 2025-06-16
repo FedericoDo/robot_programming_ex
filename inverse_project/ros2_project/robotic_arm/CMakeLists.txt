@@ -23,17 +23,22 @@ endif()
 
 include_directories(include /usr/include/eigen3)
 
-add_executable(publisher src/robotic_arm_node.cpp 
-                  src/dh_params.cpp) 
-ament_target_dependencies(publisher rclcpp std_msgs yaml-cpp ament_index_cpp visualization_msgs)
+add_executable(drawPub src/robotic_arm_node.cpp src/dh_params.cpp) 
+add_executable(coordinatesPub src/coordinates_node.cpp)
+ament_target_dependencies(drawPub rclcpp std_msgs yaml-cpp ament_index_cpp visualization_msgs)
+ament_target_dependencies(coordinatesPub rclcpp geometry_msgs)
 
-target_link_libraries(publisher yaml-cpp)
+target_link_libraries(drawPub yaml-cpp)
 
 install(DIRECTORY config/
         DESTINATION share/${PROJECT_NAME}/config)
         
 install(TARGETS
-        publisher
+        drawPub
+        DESTINATION lib/${PROJECT_NAME})
+
+install(TARGETS
+        coordinatesPub
         DESTINATION lib/${PROJECT_NAME})
 
 

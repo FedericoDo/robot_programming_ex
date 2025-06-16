@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/federico/Desktop/git/inverse_project/ros2_project/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/publisher.dir/all
+all: CMakeFiles/drawPub.dir/all
+all: CMakeFiles/coordinatesPub.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +74,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/robotic_arm_uninstall.dir/clean
-clean: CMakeFiles/publisher.dir/clean
+clean: CMakeFiles/drawPub.dir/clean
+clean: CMakeFiles/coordinatesPub.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -129,30 +131,56 @@ CMakeFiles/robotic_arm_uninstall.dir/clean:
 .PHONY : CMakeFiles/robotic_arm_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/publisher.dir
+# Target rules for target CMakeFiles/drawPub.dir
 
 # All Build rule for target.
-CMakeFiles/publisher.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles --progress-num=1,2,3 "Built target publisher"
-.PHONY : CMakeFiles/publisher.dir/all
+CMakeFiles/drawPub.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles --progress-num=3,4,5 "Built target drawPub"
+.PHONY : CMakeFiles/drawPub.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/publisher.dir/rule: cmake_check_build_system
+CMakeFiles/drawPub.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/publisher.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/drawPub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles 0
-.PHONY : CMakeFiles/publisher.dir/rule
+.PHONY : CMakeFiles/drawPub.dir/rule
 
 # Convenience name for target.
-publisher: CMakeFiles/publisher.dir/rule
-.PHONY : publisher
+drawPub: CMakeFiles/drawPub.dir/rule
+.PHONY : drawPub
 
 # clean rule for target.
-CMakeFiles/publisher.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/clean
-.PHONY : CMakeFiles/publisher.dir/clean
+CMakeFiles/drawPub.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/clean
+.PHONY : CMakeFiles/drawPub.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/coordinatesPub.dir
+
+# All Build rule for target.
+CMakeFiles/coordinatesPub.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinatesPub.dir/build.make CMakeFiles/coordinatesPub.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinatesPub.dir/build.make CMakeFiles/coordinatesPub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles --progress-num=1,2 "Built target coordinatesPub"
+.PHONY : CMakeFiles/coordinatesPub.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/coordinatesPub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/coordinatesPub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles 0
+.PHONY : CMakeFiles/coordinatesPub.dir/rule
+
+# Convenience name for target.
+coordinatesPub: CMakeFiles/coordinatesPub.dir/rule
+.PHONY : coordinatesPub
+
+# clean rule for target.
+CMakeFiles/coordinatesPub.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinatesPub.dir/build.make CMakeFiles/coordinatesPub.dir/clean
+.PHONY : CMakeFiles/coordinatesPub.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

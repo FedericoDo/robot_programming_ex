@@ -198,24 +198,61 @@ robotic_arm_uninstall/fast:
 .PHONY : robotic_arm_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named publisher
+# Target rules for targets named drawPub
 
 # Build rule for target.
-publisher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publisher
-.PHONY : publisher
+drawPub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drawPub
+.PHONY : drawPub
 
 # fast build rule for target.
-publisher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/build
-.PHONY : publisher/fast
+drawPub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/build
+.PHONY : drawPub/fast
+
+#=============================================================================
+# Target rules for targets named coordinatesPub
+
+# Build rule for target.
+coordinatesPub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 coordinatesPub
+.PHONY : coordinatesPub
+
+# fast build rule for target.
+coordinatesPub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinatesPub.dir/build.make CMakeFiles/coordinatesPub.dir/build
+.PHONY : coordinatesPub/fast
+
+src/coordinates_node.o: src/coordinates_node.cpp.o
+.PHONY : src/coordinates_node.o
+
+# target to build an object file
+src/coordinates_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinatesPub.dir/build.make CMakeFiles/coordinatesPub.dir/src/coordinates_node.cpp.o
+.PHONY : src/coordinates_node.cpp.o
+
+src/coordinates_node.i: src/coordinates_node.cpp.i
+.PHONY : src/coordinates_node.i
+
+# target to preprocess a source file
+src/coordinates_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinatesPub.dir/build.make CMakeFiles/coordinatesPub.dir/src/coordinates_node.cpp.i
+.PHONY : src/coordinates_node.cpp.i
+
+src/coordinates_node.s: src/coordinates_node.cpp.s
+.PHONY : src/coordinates_node.s
+
+# target to generate assembly for a file
+src/coordinates_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coordinatesPub.dir/build.make CMakeFiles/coordinatesPub.dir/src/coordinates_node.cpp.s
+.PHONY : src/coordinates_node.cpp.s
 
 src/dh_params.o: src/dh_params.cpp.o
 .PHONY : src/dh_params.o
 
 # target to build an object file
 src/dh_params.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/dh_params.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/src/dh_params.cpp.o
 .PHONY : src/dh_params.cpp.o
 
 src/dh_params.i: src/dh_params.cpp.i
@@ -223,7 +260,7 @@ src/dh_params.i: src/dh_params.cpp.i
 
 # target to preprocess a source file
 src/dh_params.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/dh_params.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/src/dh_params.cpp.i
 .PHONY : src/dh_params.cpp.i
 
 src/dh_params.s: src/dh_params.cpp.s
@@ -231,7 +268,7 @@ src/dh_params.s: src/dh_params.cpp.s
 
 # target to generate assembly for a file
 src/dh_params.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/dh_params.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/src/dh_params.cpp.s
 .PHONY : src/dh_params.cpp.s
 
 src/robotic_arm_node.o: src/robotic_arm_node.cpp.o
@@ -239,7 +276,7 @@ src/robotic_arm_node.o: src/robotic_arm_node.cpp.o
 
 # target to build an object file
 src/robotic_arm_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o
 .PHONY : src/robotic_arm_node.cpp.o
 
 src/robotic_arm_node.i: src/robotic_arm_node.cpp.i
@@ -247,7 +284,7 @@ src/robotic_arm_node.i: src/robotic_arm_node.cpp.i
 
 # target to preprocess a source file
 src/robotic_arm_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.i
 .PHONY : src/robotic_arm_node.cpp.i
 
 src/robotic_arm_node.s: src/robotic_arm_node.cpp.s
@@ -255,7 +292,7 @@ src/robotic_arm_node.s: src/robotic_arm_node.cpp.s
 
 # target to generate assembly for a file
 src/robotic_arm_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/robotic_arm_node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPub.dir/build.make CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.s
 .PHONY : src/robotic_arm_node.cpp.s
 
 # Help Target
@@ -273,7 +310,11 @@ help:
 	@echo "... test"
 	@echo "... robotic_arm_uninstall"
 	@echo "... uninstall"
-	@echo "... publisher"
+	@echo "... coordinatesPub"
+	@echo "... drawPub"
+	@echo "... src/coordinates_node.o"
+	@echo "... src/coordinates_node.i"
+	@echo "... src/coordinates_node.s"
 	@echo "... src/dh_params.o"
 	@echo "... src/dh_params.i"
 	@echo "... src/dh_params.s"

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-9b2963fa69fca78ea9eb.json",
+					"jsonFile" : "directory-.-8fadcc075ab5ad19cd1b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -18,7 +18,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -35,7 +36,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -43,9 +45,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "publisher::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-publisher-9cae3cc2928daa076b16.json",
-					"name" : "publisher",
+					"id" : "coordinatesPub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-coordinatesPub-c18c567696d3e0500c09.json",
+					"name" : "coordinatesPub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drawPub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drawPub-7229362e5272ecb8fc2d.json",
+					"name" : "drawPub",
 					"projectIndex" : 0
 				},
 				{

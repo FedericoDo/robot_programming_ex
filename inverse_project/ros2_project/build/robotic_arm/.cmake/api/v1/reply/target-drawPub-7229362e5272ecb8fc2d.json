@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "publisher"
+			"path" : "drawPub"
 		}
 	],
 	"backtrace" : 1,
@@ -76,7 +76,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 35,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
@@ -94,7 +94,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 30,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -781,7 +781,7 @@
 			]
 		}
 	],
-	"id" : "publisher::@6890427a1f51a3e7e1df",
+	"id" : "drawPub::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -1330,8 +1330,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "publisher",
-	"nameOnDisk" : "publisher",
+	"name" : "drawPub",
+	"nameOnDisk" : "drawPub",
 	"paths" : 
 	{
 		"build" : ".",

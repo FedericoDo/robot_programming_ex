@@ -1,6 +1,7 @@
 /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles/uninstall.dir
 /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles/robotic_arm_uninstall.dir
-/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles/publisher.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles/drawPub.dir
+/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles/coordinatesPub.dir
 /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles/test.dir
 /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles/edit_cache.dir
 /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm/CMakeFiles/rebuild_cache.dir
