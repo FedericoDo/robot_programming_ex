@@ -1,0 +1,9 @@
+[ 40%] Built target coordinatesPub
+[ 60%] [32mBuilding CXX object CMakeFiles/drawPub.dir/src/dh_params.cpp.o[0m
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/dh_params.cpp:[m[K In function ‘[01m[KEigen::MatrixXd[01;32m[K computeJacobianPseudoInverse[m[K(std::vector<DHParams>&, const std::vector<Eigen::Matrix<double, 4, 4> >&)[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/dh_params.cpp:59:25:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeForwardKinematics[m[K’ was not declared in this scope
+   59 |         transforms[i] = [01;31m[KcomputeForwardKinematics[m[K(dh_params_[i]);
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/drawPub.dir/build.make:90: CMakeFiles/drawPub.dir/src/dh_params.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/drawPub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

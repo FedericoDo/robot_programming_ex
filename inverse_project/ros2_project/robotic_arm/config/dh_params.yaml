@@ -2,12 +2,16 @@ joints:
   - theta: 1.57
     alpha: 1.57
     a: 1
-    d: 0.0
+    d: 1
   - theta: 3.14
-    alpha: 3.14
-    a: 1
-    d: 0.0
-  - theta: 3.14
+    alpha: 1.57
+    a: 2
+    d: 1
+  - theta: 1.57
     alpha: -1.57
-    a: 1
-    d: 0.0
+    a: 3
+    d: 1
+  - theta: -1.57
+    alpha: 1.57
+    a: 1.0
+    d: 1

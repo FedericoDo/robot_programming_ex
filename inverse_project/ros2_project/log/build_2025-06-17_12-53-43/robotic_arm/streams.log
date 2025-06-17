@@ -1,0 +1,34 @@
+[0.008s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.099s] [ 40%] Built target coordinatesPub
+[0.113s] [ 60%] [32mBuilding CXX object CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o[0m
+[0.117s] [ 80%] [32mBuilding CXX object CMakeFiles/drawPub.dir/src/dh_params.cpp.o[0m
+[2.490s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[2.490s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:33:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.490s]    33 |         for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+[2.490s]       |                          [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[2.504s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishPoints[m[K()[m[K’:
+[2.504s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:86:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.504s]    86 |         for(auto i = 0; [01;35m[Ki<transforms.size()[m[K; i++){
+[2.504s]       |                         [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[2.504s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:93:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.504s]    93 |             if([01;35m[Ki == transforms.size()-1[m[K){
+[2.505s]       |                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.506s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishLines[m[K()[m[K’:
+[2.507s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:138:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<visualization_msgs::msg::Marker_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.507s]   138 |         for (auto o = 0; [01;35m[Ko < joints.markers.size()-1[m[K; o++){
+[2.507s]       |                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.531s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KsolveInverseKinematics[m[K(const Eigen::Vector3d&)[m[K’:
+[2.531s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:229:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.531s]   229 |                 for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+[2.531s]       |                                  [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[2.608s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:239:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.608s]   239 |             for (int i = 0; [01;35m[Ki < dh_params_.size()[m[K; i++) {
+[2.608s]       |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[7.984s] [100%] [32m[1mLinking CXX executable drawPub[0m
+[8.334s] /usr/bin/ld: CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o: in function `RoboticArmNode::solveInverseKinematics(Eigen::Matrix<double, 3, 1, 0, 3, 1> const&)':
+[8.334s] robotic_arm_node.cpp:(.text._ZN14RoboticArmNode22solveInverseKinematicsERKN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEE[_ZN14RoboticArmNode22solveInverseKinematicsERKN5Eigen6MatrixIdLi3ELi1ELi0ELi3ELi1EEE]+0x487): undefined reference to `DHParams::computeJacobianPseudoInverse(std::vector<DHParams, std::allocator<DHParams> >&, std::vector<Eigen::Matrix<double, 4, 4, 0, 4, 4>, std::allocator<Eigen::Matrix<double, 4, 4, 0, 4, 4> > >&)'
+[8.377s] collect2: error: ld returned 1 exit status
+[8.378s] gmake[2]: *** [CMakeFiles/drawPub.dir/build.make:210: drawPub] Error 1
+[8.379s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/drawPub.dir/all] Error 2
+[8.379s] gmake: *** [Makefile:146: all] Error 2
+[8.382s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12

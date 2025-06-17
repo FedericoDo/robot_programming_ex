@@ -1,0 +1,11 @@
+[0.011s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.094s] [ 40%] Built target coordinatesPub
+[0.114s] [ 60%] [32mBuilding CXX object CMakeFiles/drawPub.dir/src/dh_params.cpp.o[0m
+[2.089s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/dh_params.cpp:[m[K In function ‘[01m[KEigen::MatrixXd[01;32m[K computeJacobianPseudoInverse[m[K(std::vector<DHParams>&, const std::vector<Eigen::Matrix<double, 4, 4> >&)[m[K’:
+[2.089s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/dh_params.cpp:59:25:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeForwardKinematics[m[K’ was not declared in this scope
+[2.090s]    59 |         transforms[i] = [01;31m[KcomputeForwardKinematics[m[K(dh_params_[i]);
+[2.090s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.509s] gmake[2]: *** [CMakeFiles/drawPub.dir/build.make:90: CMakeFiles/drawPub.dir/src/dh_params.cpp.o] Error 1
+[4.509s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/drawPub.dir/all] Error 2
+[4.510s] gmake: *** [Makefile:146: all] Error 2
+[4.513s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12

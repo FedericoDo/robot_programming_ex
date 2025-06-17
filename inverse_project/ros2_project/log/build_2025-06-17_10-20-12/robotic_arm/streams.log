@@ -1,0 +1,48 @@
+[0.007s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[0.105s] [ 40%] Built target coordinatesPub
+[0.127s] [ 60%] [32mBuilding CXX object CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o[0m
+[1.905s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[1.905s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:33:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.905s]    33 |         for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+[1.905s]       |                          [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[1.909s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishPoints[m[K()[m[K’:
+[1.909s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:88:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.909s]    88 |         for(auto i = 0; [01;35m[Ki<transforms.size()[m[K; i++){
+[1.909s]       |                         [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[1.911s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishLines[m[K()[m[K’:
+[1.911s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:133:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<visualization_msgs::msg::Marker_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.911s]   133 |         for (auto o = 0; [01;35m[Ko < joints.markers.size()-1[m[K; o++){
+[1.911s]       |                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.021s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KsolveInverseKinematics[m[K(const Eigen::Vector3d&)[m[K’:
+[2.022s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:242:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.022s]   242 |                 for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+[2.022s]       |                                  [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[2.037s] [01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:252:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.037s]   252 |             for (int i = 0; [01;35m[Ki < dh_params_.size()[m[K; i++) {
+[2.037s]       |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[9.530s] [ 80%] [32m[1mLinking CXX executable drawPub[0m
+[9.995s] [100%] Built target drawPub
+[10.007s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm -- -j12 -l12
+[10.022s] Invoking command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm
+[10.033s] -- Install configuration: ""
+[10.033s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/config
+[10.033s] -- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/config/dh_params.yaml
+[10.034s] -- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/drawPub
+[10.045s] -- Set non-toolchain portion of runtime path of "/home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/drawPub" to ""
+[10.045s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/coordinatesPub
+[10.046s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/package_run_dependencies/robotic_arm
+[10.046s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/parent_prefix_path/robotic_arm
+[10.046s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.sh
+[10.046s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.dsv
+[10.047s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/path.sh
+[10.047s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/path.dsv
+[10.047s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.bash
+[10.047s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.sh
+[10.047s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.zsh
+[10.047s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.dsv
+[10.047s] -- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/package.dsv
+[10.048s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/packages/robotic_arm
+[10.048s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig.cmake
+[10.048s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig-version.cmake
+[10.048s] -- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/package.xml
+[10.051s] Invoked command in '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm

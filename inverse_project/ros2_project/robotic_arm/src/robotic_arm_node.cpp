@@ -22,16 +22,16 @@ public:
         pointsPublisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("joints", 10);
         linesPublisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("links", 10);
         pointTimer_ = this->create_wall_timer(
-            std::chrono::seconds(1),
+            std::chrono::milliseconds(200),
             std::bind(&RoboticArmNode::publishPoints, this));
         lineTimer_ = this->create_wall_timer(
-            std::chrono::seconds(1),
+            std::chrono::milliseconds(200),
             std::bind(&RoboticArmNode::publishLines, this));
 
         //INITIALIZE DATAS
         transforms.clear();
         for (auto i = 0; i< dh_params_.size(); i++){
-            transforms.push_back(computeForwardKinematics(dh_params_[i]));
+            transforms.push_back(DHParams::computeForwardKinematics(dh_params_[i]));
         }
 
         //INITIALIZE SUBSCRIBER
@@ -48,10 +48,7 @@ private:
     visualization_msgs::msg::MarkerArray links;
     rclcpp::TimerBase::SharedPtr pointTimer_;
     rclcpp::TimerBase::SharedPtr lineTimer_;
-    Eigen::Matrix4d T;
     std::vector<Eigen::Matrix4d> transforms;
-    double delta = 0.1;
-
     void publishPoints()
     {
         joints.markers.clear();
@@ -92,6 +89,17 @@ private:
             joint.ns = "robotic_joint_"+std::to_string(i+1);
             joint.id = i+1;
             joint.type = visualization_msgs::msg::Marker::SPHERE;
+            if(i == transforms.size()-1){
+                joint.color.r = 0.0;
+                joint.color.g = 0.0;
+                joint.color.b = 1.0;
+                joint.color.a = 1.0;
+            } else {
+                joint.color.r = 1.0;
+                joint.color.g = 0.0;
+                joint.color.b = 0.0;
+                joint.color.a = 1.0;
+            }
             joint.action = visualization_msgs::msg::Marker::ADD;
 
             Eigen::Matrix4d T1 = transforms[0];
@@ -112,10 +120,6 @@ private:
             joint.scale.y = 0.2;
             joint.scale.z = 0.2;
 
-            joint.color.r = 1.0;
-            joint.color.g = 0.0;
-            joint.color.b = 0.0;
-            joint.color.a = 1.0;
             joints.markers.push_back(joint);
         }
 
@@ -167,63 +171,12 @@ private:
     {
         RCLCPP_INFO(this->get_logger(), "Received coordinates: x=%.2f, y=%.2f, z=%.2f", msg->x, msg->y, msg->z);
         Eigen::Vector3d desiredPos(msg->x, msg->y, msg->z);
-
+        
         solveInverseKinematics(desiredPos);
-        // Here you can add logic to handle the received coordinates
     }
-    Eigen::Matrix4d computeForwardKinematics(const DHParams &param)
-    {
-        T = Eigen::Matrix4d::Identity();
-
-        double theta = param.theta;
-        double d = param.d;
-        double a = param.a;
-        double alpha = param.alpha;
-
-        Eigen::Matrix4d A;
-        T << cos(theta), -sin(theta) * cos(alpha), sin(theta) * sin(alpha), a * cos(theta),
-            sin(theta), cos(theta) * cos(alpha), -cos(theta) * sin(alpha), a * sin(theta),
-            0, sin(alpha), cos(alpha), d,
-            0, 0, 0, 1;
-
-        return T;
-    }
-    Eigen::MatrixXd computeJacobianPseudoInverse(){
-        int n = dh_params_.size();
-        Eigen::MatrixXd J(3,n);
-        
-        Eigen::Matrix4d T_end = Eigen::Matrix4d::Identity();
-        for (const auto &T : transforms) {
-            T_end *= T;
-        }
-        Eigen::Vector3d end_effector_position(T_end(0, 3), T_end(1, 3), T_end(2, 3));
-        
-        for(int i=0; i<n; i++){
-            double original_theta = dh_params_[i].theta;
-            dh_params_[i].theta += delta;
-            transforms[i] = computeForwardKinematics(dh_params_[i]);
-            Eigen::Matrix4d T_modified = Eigen::Matrix4d::Identity();
-            for (const auto &T : transforms) {
-                T_modified *= T;
-            }
-            Eigen::Vector3d modified_position(T_modified(0, 3), T_modified(1, 3), T_modified(2, 3));
-            Eigen::Vector3d variation = (modified_position - end_effector_position) / delta;
-            
-            J(0, i) = variation(0); 
-            J(1, i) = variation(1); 
-            J(2, i) = variation(2);
-
-            dh_params_[i].theta = original_theta;
-            transforms[i] = computeForwardKinematics(dh_params_[i]);
-        }
-        J = J.completeOrthogonalDecomposition().pseudoInverse();
-        
-        return J;
-    }
-
     void solveInverseKinematics(const Eigen::Vector3d &desired_position){
-        const double tolerance = 1e-3; 
-        const int max_iterations = 1000;
+        const double tolerance = 1e-2; 
+        const int max_iterations = 100;
         int iteration = 0;
 
         while (iteration < max_iterations)
@@ -240,19 +193,22 @@ private:
                 RCLCPP_INFO(this->get_logger(), "Inverse kinematics converged after %d iterations.", iteration);
                 transforms.clear();
                 for (auto i = 0; i< dh_params_.size(); i++){
-                    transforms.push_back(computeForwardKinematics(dh_params_[i]));
+                    transforms.push_back(DHParams::computeForwardKinematics(dh_params_[i]));
                 }
                 return;
             }
 
-            Eigen::MatrixXd J_pseudo = computeJacobianPseudoInverse();
+            Eigen::MatrixXd J_pseudo = DHParams::computeJacobianPseudoInverse(dh_params_, transforms);
 
-            Eigen::VectorXd delta_theta = J_pseudo * error;
+            Eigen::VectorXd delta_theta = J_pseudo * error *0.1;
 
             for (int i = 0; i < dh_params_.size(); i++) {
                 dh_params_[i].theta += delta_theta(i);
-                transforms[i] = computeForwardKinematics(dh_params_[i]);
+                transforms[i] = DHParams::computeForwardKinematics(dh_params_[i]);
             }
+            publishPoints();
+            publishLines();
+            rclcpp::sleep_for(std::chrono::milliseconds(100));
 
             iteration++;
         }

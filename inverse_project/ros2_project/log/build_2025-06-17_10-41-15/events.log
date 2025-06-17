@@ -1,0 +1,117 @@
+[0.000000] (-) TimerEvent: {}
+[0.000442] (robotic_arm) JobQueued: {'identifier': 'robotic_arm', 'dependencies': OrderedDict()}
+[0.000474] (robotic_arm) JobStarted: {'identifier': 'robotic_arm'}
+[0.007266] (robotic_arm) JobProgress: {'identifier': 'robotic_arm', 'progress': 'cmake'}
+[0.007844] (robotic_arm) JobProgress: {'identifier': 'robotic_arm', 'progress': 'build'}
+[0.008084] (robotic_arm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm', '--', '-j12', '-l12'], 'cwd': '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'federico', 'LC_TIME': 'it_IT.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/federico', 'OLDPWD': '/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'it_IT.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2317', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=72ecf973c6e0e7f0276aabd768512018', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/federico/Desktop/git/inverse_project/ros2_project/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'federico', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'federico', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/federico/.pixi/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/federico/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/federico/.dotnet/tools', 'SESSION_MANAGER': 'local/federico-HP-Pavilion-Laptop-15-eg2xxx:@/tmp/.ICE-unix/2317,unix/federico-HP-Pavilion-Laptop-15-eg2xxx:/tmp/.ICE-unix/2317', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'it_IT.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c5c42396_2df4_43d9_989c_d953c0b95f8d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/federico/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'it_IT.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.O1SG82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.110', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'it_IT.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'it_IT.UTF-8', 'LC_IDENTIFICATION': 'it_IT.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=72ecf973c6e0e7f0276aabd768512018', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'it_IT.UTF-8', 'LC_PAPER': 'it_IT.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099733] (robotic_arm) StdoutLine: {'line': b'[ 40%] Built target coordinatesPub\n'}
+[0.100129] (-) TimerEvent: {}
+[0.120409] (robotic_arm) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o\x1b[0m\n'}
+[0.122283] (robotic_arm) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/drawPub.dir/src/dh_params.cpp.o\x1b[0m\n'}
+[0.200282] (-) TimerEvent: {}
+[0.300661] (-) TimerEvent: {}
+[0.400949] (-) TimerEvent: {}
+[0.501234] (-) TimerEvent: {}
+[0.601535] (-) TimerEvent: {}
+[0.701822] (-) TimerEvent: {}
+[0.802112] (-) TimerEvent: {}
+[0.902400] (-) TimerEvent: {}
+[1.002714] (-) TimerEvent: {}
+[1.103036] (-) TimerEvent: {}
+[1.203346] (-) TimerEvent: {}
+[1.303677] (-) TimerEvent: {}
+[1.403968] (-) TimerEvent: {}
+[1.504268] (-) TimerEvent: {}
+[1.604588] (-) TimerEvent: {}
+[1.704895] (-) TimerEvent: {}
+[1.805198] (-) TimerEvent: {}
+[1.905514] (-) TimerEvent: {}
+[2.005820] (-) TimerEvent: {}
+[2.093898] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KRoboticArmNode::\x1b[01;32m\x1b[KRoboticArmNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.094165] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:33:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<DHParams>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.094264] (robotic_arm) StderrLine: {'line': b'   33 |         for (auto i = 0; \x1b[01;35m\x1b[Ki< dh_params_.size()\x1b[m\x1b[K; i++){\n'}
+[2.094329] (robotic_arm) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.094390] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:34:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdh_params\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.094451] (robotic_arm) StderrLine: {'line': b'   34 |             transforms.push_back(\x1b[01;31m\x1b[Kdh_params\x1b[m\x1b[K::computeForwardKinematics(dh_params_[i]));\n'}
+[2.094528] (robotic_arm) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.095152] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/dh_params.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix4d\x1b[01;32m\x1b[K computeForwardKinematics\x1b[m\x1b[K(const DHParams&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.095265] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/dh_params.cpp:27:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KT\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.095331] (robotic_arm) StderrLine: {'line': b'   27 |         \x1b[01;31m\x1b[KT\x1b[m\x1b[K = Eigen::Matrix4d::Identity();\n'}
+[2.095390] (robotic_arm) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.098751] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RoboticArmNode::\x1b[01;32m\x1b[KpublishPoints\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.098912] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:88:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.098993] (robotic_arm) StderrLine: {'line': b'   88 |         for(auto i = 0; \x1b[01;35m\x1b[Ki<transforms.size()\x1b[m\x1b[K; i++){\n'}
+[2.099052] (robotic_arm) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.099167] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:95:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.099233] (robotic_arm) StderrLine: {'line': b'   95 |             if(\x1b[01;35m\x1b[Ki == transforms.size()-1\x1b[m\x1b[K){\n'}
+[2.099291] (robotic_arm) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.101102] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RoboticArmNode::\x1b[01;32m\x1b[KpublishLines\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.101253] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:140:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<visualization_msgs::msg::Marker_<std::allocator<void> > > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.101338] (robotic_arm) StderrLine: {'line': b'  140 |         for (auto o = 0; \x1b[01;35m\x1b[Ko < joints.markers.size()-1\x1b[m\x1b[K; o++){\n'}
+[2.101401] (robotic_arm) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.105909] (-) TimerEvent: {}
+[2.121461] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXd RoboticArmNode::\x1b[01;32m\x1b[KcomputeJacobianPseudoInverse\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.121705] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:211:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdh_params\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.121791] (robotic_arm) StderrLine: {'line': b'  211 |             transforms[i] = \x1b[01;31m\x1b[Kdh_params\x1b[m\x1b[K::computeForwardKinematics(dh_params_[i]);\n'}
+[2.121852] (robotic_arm) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.178209] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:224:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdh_params\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.178417] (robotic_arm) StderrLine: {'line': b'  224 |             transforms[i] = \x1b[01;31m\x1b[Kdh_params\x1b[m\x1b[K::computeForwardKinematics(dh_params_[i]);\n'}
+[2.178505] (robotic_arm) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.206056] (-) TimerEvent: {}
+[2.216570] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RoboticArmNode::\x1b[01;32m\x1b[KsolveInverseKinematics\x1b[m\x1b[K(const Eigen::Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.216784] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:249:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<DHParams>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.216870] (robotic_arm) StderrLine: {'line': b'  249 |                 for (auto i = 0; \x1b[01;35m\x1b[Ki< dh_params_.size()\x1b[m\x1b[K; i++){\n'}
+[2.216935] (robotic_arm) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.216995] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:250:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdh_params\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.217068] (robotic_arm) StderrLine: {'line': b'  250 |                     transforms.push_back(\x1b[01;31m\x1b[Kdh_params\x1b[m\x1b[K::computeForwardKinematics(dh_params_[i]));\n'}
+[2.217129] (robotic_arm) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.232712] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:259:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<DHParams>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.232935] (robotic_arm) StderrLine: {'line': b'  259 |             for (int i = 0; \x1b[01;35m\x1b[Ki < dh_params_.size()\x1b[m\x1b[K; i++) {\n'}
+[2.233013] (robotic_arm) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.233150] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:261:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdh_params\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.233226] (robotic_arm) StderrLine: {'line': b'  261 |                 transforms[i] = \x1b[01;31m\x1b[Kdh_params\x1b[m\x1b[K::computeForwardKinematics(dh_params_[i]);\n'}
+[2.233286] (robotic_arm) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.306188] (-) TimerEvent: {}
+[2.406568] (-) TimerEvent: {}
+[2.506862] (-) TimerEvent: {}
+[2.607153] (-) TimerEvent: {}
+[2.640495] (robotic_arm) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/drawPub.dir/build.make:90: CMakeFiles/drawPub.dir/src/dh_params.cpp.o] Error 1\n'}
+[2.640662] (robotic_arm) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.707358] (-) TimerEvent: {}
+[2.807728] (-) TimerEvent: {}
+[2.908064] (-) TimerEvent: {}
+[3.008400] (-) TimerEvent: {}
+[3.108766] (-) TimerEvent: {}
+[3.209147] (-) TimerEvent: {}
+[3.309413] (-) TimerEvent: {}
+[3.409754] (-) TimerEvent: {}
+[3.510138] (-) TimerEvent: {}
+[3.610420] (-) TimerEvent: {}
+[3.710727] (-) TimerEvent: {}
+[3.811024] (-) TimerEvent: {}
+[3.911296] (-) TimerEvent: {}
+[4.011590] (-) TimerEvent: {}
+[4.111867] (-) TimerEvent: {}
+[4.212166] (-) TimerEvent: {}
+[4.312445] (-) TimerEvent: {}
+[4.412749] (-) TimerEvent: {}
+[4.513032] (-) TimerEvent: {}
+[4.613325] (-) TimerEvent: {}
+[4.713611] (-) TimerEvent: {}
+[4.813932] (-) TimerEvent: {}
+[4.914249] (-) TimerEvent: {}
+[5.014548] (-) TimerEvent: {}
+[5.114910] (-) TimerEvent: {}
+[5.215369] (-) TimerEvent: {}
+[5.315679] (-) TimerEvent: {}
+[5.415956] (-) TimerEvent: {}
+[5.516261] (-) TimerEvent: {}
+[5.616569] (-) TimerEvent: {}
+[5.716840] (-) TimerEvent: {}
+[5.808580] (robotic_arm) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/drawPub.dir/build.make:76: CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o] Error 1\n'}
+[5.808875] (robotic_arm) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/drawPub.dir/all] Error 2\n'}
+[5.809046] (robotic_arm) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.811055] (robotic_arm) CommandEnded: {'returncode': 2}
+[5.816506] (robotic_arm) JobEnded: {'identifier': 'robotic_arm', 'rc': 2}
+[5.816889] (-) TimerEvent: {}
+[5.827083] (-) EventReactorShutdown: {}

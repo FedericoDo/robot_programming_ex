@@ -1,0 +1,48 @@
+[ 40%] Built target coordinatesPub
+[ 60%] [32mBuilding CXX object CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o[0m
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:33:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   33 |         for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+      |                          [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:34:68:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[KEigen::Matrix4d DHParams::[01;32m[KcomputeForwardKinematics[m[K(const DHParams&)[m[K’ without object
+   34 |      transforms.push_back([01;31m[KDHParams::computeForwardKinematics(dh_params_[i])[m[K);
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishPoints[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:88:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   88 |         for(auto i = 0; [01;35m[Ki<transforms.size()[m[K; i++){
+      |                         [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:95:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   95 |             if([01;35m[Ki == transforms.size()-1[m[K){
+      |                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishLines[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:140:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<visualization_msgs::msg::Marker_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  140 |         for (auto o = 0; [01;35m[Ko < joints.markers.size()-1[m[K; o++){
+      |                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[KEigen::MatrixXd RoboticArmNode::[01;32m[KcomputeJacobianPseudoInverse[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:211:63:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[KEigen::Matrix4d DHParams::[01;32m[KcomputeForwardKinematics[m[K(const DHParams&)[m[K’ without object
+  211 |           transforms[i] = [01;31m[KDHParams::computeForwardKinematics(dh_params_[i])[m[K;
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:224:63:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[KEigen::Matrix4d DHParams::[01;32m[KcomputeForwardKinematics[m[K(const DHParams&)[m[K’ without object
+  224 |           transforms[i] = [01;31m[KDHParams::computeForwardKinematics(dh_params_[i])[m[K;
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KsolveInverseKinematics[m[K(const Eigen::Vector3d&)[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:249:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  249 |                 for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+      |                                  [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:250:76:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[KEigen::Matrix4d DHParams::[01;32m[KcomputeForwardKinematics[m[K(const DHParams&)[m[K’ without object
+  250 |      transforms.push_back([01;31m[KDHParams::computeForwardKinematics(dh_params_[i])[m[K);
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:259:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  259 |             for (int i = 0; [01;35m[Ki < dh_params_.size()[m[K; i++) {
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:261:67:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[KEigen::Matrix4d DHParams::[01;32m[KcomputeForwardKinematics[m[K(const DHParams&)[m[K’ without object
+  261 |           transforms[i] = [01;31m[KDHParams::computeForwardKinematics(dh_params_[i])[m[K;
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/drawPub.dir/build.make:76: CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/drawPub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
