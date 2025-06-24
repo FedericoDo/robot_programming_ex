@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000414] (robotic_arm) JobQueued: {'identifier': 'robotic_arm', 'dependencies': OrderedDict()}
+[0.000463] (robotic_arm) JobStarted: {'identifier': 'robotic_arm'}
+[0.011118] (robotic_arm) JobProgress: {'identifier': 'robotic_arm', 'progress': 'cmake'}
+[0.013810] (robotic_arm) JobProgress: {'identifier': 'robotic_arm', 'progress': 'build'}
+[0.013968] (robotic_arm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm', '--', '-j12', '-l12'], 'cwd': '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'federico', 'LC_TIME': 'it_IT.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/federico', 'OLDPWD': '/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'it_IT.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2244', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ee1c793852affd608765b125685a9e3b', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'federico', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'federico', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/federico/.pixi/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/federico/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/federico/.dotnet/tools', 'SESSION_MANAGER': 'local/federico-HP-Pavilion-Laptop-15-eg2xxx:@/tmp/.ICE-unix/2244,unix/federico-HP-Pavilion-Laptop-15-eg2xxx:/tmp/.ICE-unix/2244', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'it_IT.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/19ee6f52_538e_4736_9295_9442acd0481f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/federico/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'it_IT.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BJFN82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'it_IT.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'it_IT.UTF-8', 'LC_IDENTIFICATION': 'it_IT.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ee1c793852affd608765b125685a9e3b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'it_IT.UTF-8', 'LC_PAPER': 'it_IT.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.101274] (-) TimerEvent: {}
+[0.141366] (robotic_arm) StdoutLine: {'line': b'[ 40%] Built target coordinatesPub\n'}
+[0.154225] (robotic_arm) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o\x1b[0m\n'}
+[0.201482] (-) TimerEvent: {}
+[0.301854] (-) TimerEvent: {}
+[0.402236] (-) TimerEvent: {}
+[0.502679] (-) TimerEvent: {}
+[0.603137] (-) TimerEvent: {}
+[0.703591] (-) TimerEvent: {}
+[0.804009] (-) TimerEvent: {}
+[0.904335] (-) TimerEvent: {}
+[1.004673] (-) TimerEvent: {}
+[1.104928] (-) TimerEvent: {}
+[1.205248] (-) TimerEvent: {}
+[1.305779] (-) TimerEvent: {}
+[1.406168] (-) TimerEvent: {}
+[1.506564] (-) TimerEvent: {}
+[1.606952] (-) TimerEvent: {}
+[1.707340] (-) TimerEvent: {}
+[1.807710] (-) TimerEvent: {}
+[1.908088] (-) TimerEvent: {}
+[2.008460] (-) TimerEvent: {}
+[2.108855] (-) TimerEvent: {}
+[2.209259] (-) TimerEvent: {}
+[2.241324] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KRoboticArmNode::\x1b[01;32m\x1b[KRoboticArmNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.241510] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:33:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<DHParams>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.241558] (robotic_arm) StderrLine: {'line': b'   33 |         for (auto i = 0; \x1b[01;35m\x1b[Ki< dh_params_.size()\x1b[m\x1b[K; i++){\n'}
+[2.241595] (robotic_arm) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.250593] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RoboticArmNode::\x1b[01;32m\x1b[KpublishJoints\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.250721] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:87:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.250772] (robotic_arm) StderrLine: {'line': b'   87 |         for(auto i = 0; \x1b[01;35m\x1b[Ki<transforms.size()\x1b[m\x1b[K; i++){\n'}
+[2.250810] (robotic_arm) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.250846] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:94:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.250883] (robotic_arm) StderrLine: {'line': b'   94 |             if(\x1b[01;35m\x1b[Ki == transforms.size()-1\x1b[m\x1b[K){\n'}
+[2.250916] (robotic_arm) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.252444] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RoboticArmNode::\x1b[01;32m\x1b[KpublishLinks\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.252531] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:139:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<visualization_msgs::msg::Marker_<std::allocator<void> > > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.252578] (robotic_arm) StderrLine: {'line': b'  139 |         for (auto o = 0; \x1b[01;35m\x1b[Ko < joints.markers.size()-1\x1b[m\x1b[K; o++){\n'}
+[2.252614] (robotic_arm) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.270509] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RoboticArmNode::\x1b[01;32m\x1b[KsolveInverseKinematics\x1b[m\x1b[K(const Eigen::Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.270709] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:197:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<DHParams>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.270769] (robotic_arm) StderrLine: {'line': b'  197 |                 for (auto i = 0; \x1b[01;35m\x1b[Ki< dh_params_.size()\x1b[m\x1b[K; i++){\n'}
+[2.270807] (robotic_arm) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.309451] (-) TimerEvent: {}
+[2.329246] (robotic_arm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:207:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<DHParams>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.329424] (robotic_arm) StderrLine: {'line': b'  207 |             for (int i = 0; \x1b[01;35m\x1b[Ki < dh_params_.size()\x1b[m\x1b[K; i++) {\n'}
+[2.329466] (robotic_arm) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.409728] (-) TimerEvent: {}
+[2.510066] (-) TimerEvent: {}
+[2.610410] (-) TimerEvent: {}
+[2.710760] (-) TimerEvent: {}
+[2.811108] (-) TimerEvent: {}
+[2.911469] (-) TimerEvent: {}
+[3.011817] (-) TimerEvent: {}
+[3.112161] (-) TimerEvent: {}
+[3.212519] (-) TimerEvent: {}
+[3.312780] (-) TimerEvent: {}
+[3.413118] (-) TimerEvent: {}
+[3.513491] (-) TimerEvent: {}
+[3.613736] (-) TimerEvent: {}
+[3.714031] (-) TimerEvent: {}
+[3.814391] (-) TimerEvent: {}
+[3.914669] (-) TimerEvent: {}
+[4.014971] (-) TimerEvent: {}
+[4.115295] (-) TimerEvent: {}
+[4.215567] (-) TimerEvent: {}
+[4.315825] (-) TimerEvent: {}
+[4.416104] (-) TimerEvent: {}
+[4.516387] (-) TimerEvent: {}
+[4.616663] (-) TimerEvent: {}
+[4.716951] (-) TimerEvent: {}
+[4.817254] (-) TimerEvent: {}
+[4.917797] (-) TimerEvent: {}
+[5.018205] (-) TimerEvent: {}
+[5.118600] (-) TimerEvent: {}
+[5.218855] (-) TimerEvent: {}
+[5.319180] (-) TimerEvent: {}
+[5.419538] (-) TimerEvent: {}
+[5.519866] (-) TimerEvent: {}
+[5.620196] (-) TimerEvent: {}
+[5.720536] (-) TimerEvent: {}
+[5.820865] (-) TimerEvent: {}
+[5.921130] (-) TimerEvent: {}
+[6.021485] (-) TimerEvent: {}
+[6.121841] (-) TimerEvent: {}
+[6.222089] (-) TimerEvent: {}
+[6.266748] (robotic_arm) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable drawPub\x1b[0m\n'}
+[6.322339] (-) TimerEvent: {}
+[6.422725] (-) TimerEvent: {}
+[6.523167] (-) TimerEvent: {}
+[6.623659] (-) TimerEvent: {}
+[6.724092] (-) TimerEvent: {}
+[6.804539] (robotic_arm) StdoutLine: {'line': b'[100%] Built target drawPub\n'}
+[6.818208] (robotic_arm) CommandEnded: {'returncode': 0}
+[6.819225] (robotic_arm) JobProgress: {'identifier': 'robotic_arm', 'progress': 'install'}
+[6.824272] (-) TimerEvent: {}
+[6.830666] (robotic_arm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm'], 'cwd': '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'federico', 'LC_TIME': 'it_IT.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/federico', 'OLDPWD': '/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'it_IT.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2244', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ee1c793852affd608765b125685a9e3b', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'federico', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'federico', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/federico/.pixi/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/federico/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/federico/.dotnet/tools', 'SESSION_MANAGER': 'local/federico-HP-Pavilion-Laptop-15-eg2xxx:@/tmp/.ICE-unix/2244,unix/federico-HP-Pavilion-Laptop-15-eg2xxx:/tmp/.ICE-unix/2244', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'it_IT.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/19ee6f52_538e_4736_9295_9442acd0481f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/federico/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'it_IT.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BJFN82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'it_IT.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'it_IT.UTF-8', 'LC_IDENTIFICATION': 'it_IT.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/federico/Desktop/git/inverse_project/ros2_project/build/robotic_arm', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=ee1c793852affd608765b125685a9e3b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'it_IT.UTF-8', 'LC_PAPER': 'it_IT.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[6.842157] (robotic_arm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.843264] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/config\n'}
+[6.843432] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/config/dh_params.yaml\n'}
+[6.844911] (robotic_arm) StdoutLine: {'line': b'-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/drawPub\n'}
+[6.854123] (robotic_arm) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/drawPub" to ""\n'}
+[6.855225] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/coordinatesPub\n'}
+[6.855878] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/package_run_dependencies/robotic_arm\n'}
+[6.856059] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/parent_prefix_path/robotic_arm\n'}
+[6.856323] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.sh\n'}
+[6.856519] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.dsv\n'}
+[6.856613] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/path.sh\n'}
+[6.856697] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/path.dsv\n'}
+[6.856773] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.bash\n'}
+[6.857112] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.sh\n'}
+[6.857211] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.zsh\n'}
+[6.857321] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.dsv\n'}
+[6.857396] (robotic_arm) StdoutLine: {'line': b'-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/package.dsv\n'}
+[6.857481] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/packages/robotic_arm\n'}
+[6.857558] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig.cmake\n'}
+[6.857636] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig-version.cmake\n'}
+[6.857708] (robotic_arm) StdoutLine: {'line': b'-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/package.xml\n'}
+[6.859252] (robotic_arm) CommandEnded: {'returncode': 0}
+[6.884876] (robotic_arm) JobEnded: {'identifier': 'robotic_arm', 'rc': 0}
+[6.885571] (-) EventReactorShutdown: {}

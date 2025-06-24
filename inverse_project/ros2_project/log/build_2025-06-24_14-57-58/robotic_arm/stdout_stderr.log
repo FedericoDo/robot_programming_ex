@@ -1,0 +1,47 @@
+[ 40%] Built target coordinatesPub
+[ 60%] [32mBuilding CXX object CMakeFiles/drawPub.dir/src/robotic_arm_node.cpp.o[0m
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In constructor ‘[01m[KRoboticArmNode::[01;32m[KRoboticArmNode[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:33:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   33 |         for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+      |                          [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishJoints[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:87:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   87 |         for(auto i = 0; [01;35m[Ki<transforms.size()[m[K; i++){
+      |                         [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:94:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   94 |             if([01;35m[Ki == transforms.size()-1[m[K){
+      |                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KpublishLinks[m[K()[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:139:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<visualization_msgs::msg::Marker_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  139 |         for (auto o = 0; [01;35m[Ko < joints.markers.size()-1[m[K; o++){
+      |                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:[m[K In member function ‘[01m[Kvoid RoboticArmNode::[01;32m[KsolveInverseKinematics[m[K(const Eigen::Vector3d&)[m[K’:
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:197:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  197 |                 for (auto i = 0; [01;35m[Ki< dh_params_.size()[m[K; i++){
+      |                                  [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/federico/Desktop/git/inverse_project/ros2_project/robotic_arm/src/robotic_arm_node.cpp:207:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<DHParams>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  207 |             for (int i = 0; [01;35m[Ki < dh_params_.size()[m[K; i++) {
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[ 80%] [32m[1mLinking CXX executable drawPub[0m
+[100%] Built target drawPub
+-- Install configuration: ""
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/config
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/config/dh_params.yaml
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/drawPub
+-- Set non-toolchain portion of runtime path of "/home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/drawPub" to ""
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/lib/robotic_arm/coordinatesPub
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/package_run_dependencies/robotic_arm
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/parent_prefix_path/robotic_arm
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.sh
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/path.sh
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/environment/path.dsv
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.bash
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.sh
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.zsh
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/local_setup.dsv
+-- Installing: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/package.dsv
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/ament_index/resource_index/packages/robotic_arm
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig.cmake
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/cmake/robotic_armConfig-version.cmake
+-- Up-to-date: /home/federico/Desktop/git/inverse_project/ros2_project/install/robotic_arm/share/robotic_arm/package.xml

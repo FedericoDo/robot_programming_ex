@@ -23,14 +23,14 @@ public:
         linesPublisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("links", 10);
         pointTimer_ = this->create_wall_timer(
             std::chrono::milliseconds(200),
-            std::bind(&RoboticArmNode::publishPoints, this));
+            std::bind(&RoboticArmNode::publishJoints, this));
         lineTimer_ = this->create_wall_timer(
             std::chrono::milliseconds(200),
-            std::bind(&RoboticArmNode::publishLines, this));
+            std::bind(&RoboticArmNode::publishLinks, this));
 
         //INITIALIZE DATAS
         transforms.clear();
-        for (auto i = 0; i< dh_params_.size(); i++){
+        for (std::size_t i = 0; i< dh_params_.size(); i++){
             transforms.push_back(DHParams::computeForwardKinematics(dh_params_[i]));
         }
 
@@ -49,7 +49,9 @@ private:
     rclcpp::TimerBase::SharedPtr pointTimer_;
     rclcpp::TimerBase::SharedPtr lineTimer_;
     std::vector<Eigen::Matrix4d> transforms;
-    void publishPoints()
+
+
+    void publishJoints()
     {
         joints.markers.clear();
 
@@ -82,7 +84,7 @@ private:
         joint.color.a = 1.0;
         joints.markers.push_back(joint);
 
-        for(auto i = 0; i<transforms.size(); i++){
+        for(std::size_t i = 0; i<transforms.size(); i++){
             joint.header.frame_id = "map";
             joint.header.stamp = this->get_clock()->now();
 
@@ -104,7 +106,7 @@ private:
 
             Eigen::Matrix4d T1 = transforms[0];
 
-            for(auto k = 1; k < i+1; k++){
+            for(std::size_t k = 1; k < i+1; k++){
                 T1 *= transforms[k];
             }
             joint.pose.position.x = T1(0, 3); 
@@ -125,7 +127,7 @@ private:
 
         pointsPublisher_->publish(joints);
     }
-    void publishLines()
+    void publishLinks()
     {
         links.markers.clear();
 
@@ -134,7 +136,7 @@ private:
             return;
         }
 
-        for (auto o = 0; o < joints.markers.size()-1; o++){
+        for (std::size_t o = 0; o < joints.markers.size()-1; o++){
             visualization_msgs::msg::Marker link;
             link.header.frame_id = "map";
             link.header.stamp = this->get_clock()->now();
@@ -192,7 +194,7 @@ private:
             if (error.norm() < tolerance) {
                 RCLCPP_INFO(this->get_logger(), "Inverse kinematics converged after %d iterations.", iteration);
                 transforms.clear();
-                for (auto i = 0; i< dh_params_.size(); i++){
+                for (std::size_t i = 0; i< dh_params_.size(); i++){
                     transforms.push_back(DHParams::computeForwardKinematics(dh_params_[i]));
                 }
                 return;
@@ -202,12 +204,12 @@ private:
 
             Eigen::VectorXd delta_theta = J_pseudo * error *0.1;
 
-            for (int i = 0; i < dh_params_.size(); i++) {
+            for (std::size_t  i = 0; i < dh_params_.size(); i++) {
                 dh_params_[i].theta += delta_theta(i);
                 transforms[i] = DHParams::computeForwardKinematics(dh_params_[i]);
             }
-            publishPoints();
-            publishLines();
+            publishJoints();
+            publishLinks();
             rclcpp::sleep_for(std::chrono::milliseconds(100));
 
             iteration++;
